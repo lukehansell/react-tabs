@@ -25,11 +25,20 @@ Accepts Tabs as children and manages the state of which tab is open
 
 #### Tab
 
+Tab element to be nested inside a tab container
+
 ##### props
 
-- isActive - boolean -
-  whether the tab is the currently selected or not.
 - title - string - the text for the tab header
+- isActive - boolean - is this the active tab?
+
+#### TabHeader
+
+Automatically created by the TabContainer for each Tab element given
+
+#### props
+
+- onClick - function - handler for when the element is clicked
 
 ### Rules & Behavior
 
@@ -37,12 +46,7 @@ Accepts Tabs as children and manages the state of which tab is open
 - If only one tab is provided
   - then it is always displayed
 - If multiple tabs are provided
-  - If none are set as isActive
-    - the first tab is displayed by default
-  - If a tab is set as isActive
-    - the active tab is displayed
-  - If multiple tabs are set as isActive
-    - only the first isActive tab is displayed
+  - the first tab is displayed by default
 - When a tab is clicked on
   - then content for the selected tab is displayed
   - all other tabs are not displayed
