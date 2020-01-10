@@ -31,7 +31,7 @@ Accepts Tabs as children and manages the state of which tab is open
   whether the tab is the currently selected or not.
 - title - string - the text for the tab header
 
-### Rules
+### Rules & Behavior
 
 - Only one tab can be displayed at a time
 - If only one tab is provided
