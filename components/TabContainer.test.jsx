@@ -1,4 +1,5 @@
 import React from "react";
+import { create } from "react-test-renderer";
 import { shallow } from "enzyme";
 import TabContainer from "./TabContainer";
 import Tab from "./Tab";
@@ -176,6 +177,33 @@ describe("with multiple tabs", () => {
           "qux"
         );
       });
+    });
+  });
+});
+
+describe("snapshots", () => {
+  const snapshots = {
+    "with no children": <TabContainer />,
+    "with one child": (
+      <TabContainer>
+        <Tab title="foo">bar</Tab>
+      </TabContainer>
+    ),
+    "with multiple children": (
+      <TabContainer>
+        <Tab title="foo">bar</Tab>
+        <Tab title="baz">qux</Tab>
+        <Tab title="tasty">pancake</Tab>
+      </TabContainer>
+    )
+  };
+
+  Object.keys(snapshots).forEach(testName => {
+    test(testName, () => {
+      const component = snapshots[testName];
+      const rendered = create(component);
+      const tree = rendered.toJSON();
+      expect(tree).toMatchSnapshot();
     });
   });
 });

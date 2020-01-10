@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshots with multiple children 1`] = `
+Array [
+  <div
+    className="tab-area"
+  >
+    <div
+      className="tab-header"
+      onClick={[Function]}
+    >
+      foo
+    </div>
+    <div
+      className="tab-header"
+      onClick={[Function]}
+    >
+      baz
+    </div>
+    <div
+      className="tab-header"
+      onClick={[Function]}
+    >
+      tasty
+    </div>
+  </div>,
+  <div
+    className="content-area"
+  >
+    <div
+      className="tab"
+    >
+      bar
+    </div>
+  </div>,
+]
+`;
+
+exports[`snapshots with no children 1`] = `
+Array [
+  <div
+    className="tab-area"
+  />,
+  <div
+    className="content-area"
+  />,
+]
+`;
+
+exports[`snapshots with one child 1`] = `
+Array [
+  <div
+    className="tab-area"
+  >
+    <div
+      className="tab-header"
+      onClick={[Function]}
+    >
+      foo
+    </div>
+  </div>,
+  <div
+    className="content-area"
+  >
+    <div
+      className="tab"
+    >
+      bar
+    </div>
+  </div>,
+]
+`;
