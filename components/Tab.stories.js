@@ -1,5 +1,5 @@
 import React from "react";
-import Tab from "../components/Tab";
+import Tab from "./Tab";
 
 export default {
   title: "Tab"

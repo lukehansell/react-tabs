@@ -1,6 +1,6 @@
 import React from "react";
 import { action } from "@storybook/addon-actions";
-import TabHeader from "../components/TabHeader";
+import TabHeader from "./TabHeader";
 
 export default {
   title: "Tab Header"
