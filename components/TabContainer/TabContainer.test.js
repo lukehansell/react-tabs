@@ -1,9 +1,9 @@
 import React from "react";
 import { create } from "react-test-renderer";
 import { shallow } from "enzyme";
-import TabContainer from "./TabContainer";
-import Tab from "./Tab";
-import TabHeader from "./TabHeader";
+import TabContainer from ".";
+import Tab from "../Tab";
+import TabHeader from "../TabHeader";
 
 describe("without any tabs", () => {
   let rendered;

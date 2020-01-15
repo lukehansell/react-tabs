@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import Tab from "./Tab";
+import Tab from ".";
 
 test("it renders the content", () => {
   const component = <Tab title="foo">bar</Tab>;

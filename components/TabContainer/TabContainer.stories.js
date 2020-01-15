@@ -1,7 +1,6 @@
 import React from "react";
-// import { action } from "@storybook/addon-actions";
-import TabContainer from "./TabContainer";
-import Tab from "./Tab";
+import TabContainer from ".";
+import Tab from "../Tab";
 
 export default {
   title: "Tab Container"

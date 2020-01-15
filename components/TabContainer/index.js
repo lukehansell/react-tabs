@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TabHeader from "./TabHeader";
+import TabHeader from "../TabHeader";
 export default ({ children }) => {
   const headers =
     React.Children.map(children, child => {

@@ -1,6 +1,6 @@
 import React from "react";
 import { create } from "react-test-renderer";
-import TabHeader from "./TabHeader";
+import TabHeader from ".";
 
 test("it renders the content", () => {
   const component = <TabHeader>bar</TabHeader>;
